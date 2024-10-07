@@ -7,40 +7,57 @@ export const Container = styled.div`
   gap: 2rem;
   padding-top: 2rem;
   justify-content: space-around;
+  height: 100%;
 `;
-export const EfficiencyContainer = styled.div`
+export const SectionContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 2rem;
   width: 50%;
   justify-content: space-around;
-`;
-export const ChartContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  width: 35rem;
+  height: auto;
+  backdrop-filter: blur(40px);
+  box-shadow: 00 3px 30px #0c0c0c50;
+  border-radius: 20px;
 `;
 export const CustomTitle = styled.text`
   text-align: center;
   font-size: 28px;
   padding-bottom: 16px;
+  color: #fafafa;
 `;
 export const CardContainer = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  padding: 4rem 0;
+  gap: 1rem;
+`;
+export const CardContainerChart = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: 4rem;
+`;
+export const CustomChartContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  padding: 1rem;
+  gap: 2rem;
+  box-shadow: 00 3px 10px #0c0c0c50;
+  background: linear-gradient(#f3f3f3, #fafafa, #f3f3f3);
 `;
 export const CardEfficiency = styled.div`
   display: flex;
   flex-direction: column;
-  border: 4px solid white;
   border-radius: 20px;
   padding: 1rem;
   gap: 2rem;
-  width: 15rem;
+  width: 20rem;
   height: 12rem;
+  box-shadow: 00 3px 10px #0c0c0c50;
+  background: linear-gradient(#f3f3f3, #fafafa, #f3f3f3);
 `;
 export const CardTitle = styled.text`
   text-align: center;

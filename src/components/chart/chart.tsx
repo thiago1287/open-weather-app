@@ -12,10 +12,12 @@ const OptionsChartLine: ApexOptions = {
   title: {
     text: 'Última hora',
     style: {
-      color: '#fff',
+      color: '#0c0c0c',
+      fontWeight: 500,
+      fontSize: '20px',
     },
   },
-  colors: ['#2E93fA'],
+  colors: ['#2e93fa'],
   xaxis: {
     categories: [5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60],
   },
@@ -38,9 +40,6 @@ const OptionsChartLine: ApexOptions = {
   },
   grid: {
     show: false,
-  },
-  theme: {
-    mode: 'dark',
   },
 };
 export function CustomChart() {

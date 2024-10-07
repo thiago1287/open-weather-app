@@ -4,14 +4,15 @@ import { CustomChart } from './components/chart/chart';
 import { Header } from './components/header/header';
 import {
   CardContainer,
+  CardContainerChart,
   CardEfficiency,
   CardText,
   CardTitle,
-  ChartContainer,
   Container,
+  CustomChartContainer,
   CustomTitle,
-  EfficiencyContainer,
   IconTextWrapper,
+  SectionContainer,
   StyledCogs,
   StyledTemperature,
 } from './styles';
@@ -42,9 +43,9 @@ export function Home() {
     <>
       <Header />
       <Container>
-        <EfficiencyContainer>
-          <CustomTitle>Eficiência da Maquina</CustomTitle>
+        <SectionContainer>
           <CardContainer>
+            <CustomTitle>Eficiência da Maquina</CustomTitle>
             <CardEfficiency>
               <IconTextWrapper>
                 <StyledTemperature />
@@ -68,11 +69,15 @@ export function Home() {
               </CardText>
             </CardEfficiency>
           </CardContainer>
-        </EfficiencyContainer>
-        <ChartContainer>
-          <CustomTitle>Histórico</CustomTitle>
-          <CustomChart />
-        </ChartContainer>
+        </SectionContainer>
+        <SectionContainer>
+          <CardContainerChart>
+            <CustomTitle>Histórico</CustomTitle>
+            <CustomChartContainer>
+              <CustomChart />
+            </CustomChartContainer>
+          </CardContainerChart>
+        </SectionContainer>
       </Container>
     </>
   );
