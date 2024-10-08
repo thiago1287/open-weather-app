@@ -5,9 +5,10 @@ export const Container = styled.div`
   display: flex;
   flex-direction: row;
   gap: 2rem;
-  padding-top: 2rem;
+  padding-top: 3rem;
   justify-content: space-around;
   height: 100%;
+  margin: 0 3rem;
 `;
 export const SectionContainer = styled.div`
   display: flex;
@@ -15,7 +16,6 @@ export const SectionContainer = styled.div`
   gap: 2rem;
   width: 50%;
   justify-content: space-around;
-  height: auto;
   backdrop-filter: blur(40px);
   box-shadow: 00 3px 30px #0c0c0c50;
   border-radius: 20px;
@@ -31,7 +31,6 @@ export const CardContainer = styled.div`
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  padding: 4rem 0;
   gap: 1rem;
 `;
 export const CardContainerChart = styled.div`

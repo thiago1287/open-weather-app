@@ -10,6 +10,7 @@ export const HeaderContainer = styled.div`
   backdrop-filter: blur(40px);
   box-shadow: 00 3px 30px #0c0c0c50;
   border-radius: 20px;
+  margin: 0 3rem;
 `;
 export const HeaderText = styled.text`
   text-align: center;
